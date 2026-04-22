@@ -15,7 +15,8 @@
 > DOI: [pending upon acceptance]
 
 ---
-
+<img width="1280" height="720" alt="Graphical abstract_Final" src="https://github.com/user-attachments/assets/99ddeda4-bfa4-4ff0-bcec-cecf3f0edf48" />
+To read full story of Bayesian Quantum Phase Estimation : ----https://medium.com/p/bd98e8cddee4?postPublishedType=initial
 ## Overview
 
 This repository contains the complete, peer-reviewed implementation of the
