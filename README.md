@@ -17,6 +17,7 @@
 ---
 <img width="1280" height="720" alt="Graphical abstract_Final" src="https://github.com/user-attachments/assets/99ddeda4-bfa4-4ff0-bcec-cecf3f0edf48" />
 To read full story of Bayesian Quantum Phase Estimation : ----https://medium.com/p/bd98e8cddee4?postPublishedType=initial
+<img width="981" height="475" alt="anim3_crlb_landscape" src="https://github.com/user-attachments/assets/5419d760-5b16-41d4-8e50-630ff184b996" />
 
 
 ## Overview
