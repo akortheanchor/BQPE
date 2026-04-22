@@ -7,7 +7,7 @@
 
 **Reproducibility repository for:**
 
-> Akoramurthy B., Surendiran B., Cheng X. (2026)  
+> Akoramurthy B., Surendiran B., Xiaochun Cheng., Sachi Nandan Mohanty. (2026)  
 > *Bayesian Quantum Phase Estimation Beyond the Eigenstate Approximation:
 > Sample Complexity, Cramér–Rao Bounds, and Adaptive Measurement Design
 > for Non-Eigenstate and Mixed-State Inputs on NISQ Devices*  
@@ -242,12 +242,14 @@ If you use this code in your research, please cite:
 Also cite the companion manuscript:
 
 ```bibtex
-@misc{Akoramurthy2026PFA,
-  author       = {Akoramurthy, B. and Surendiran, B.},
-  title        = {Phase-Fidelity-Aware Truncated Quantum {F}ourier Transform
-                  for Scalable Phase Estimation on {NISQ} Hardware},
-  howpublished = {arXiv:2604.05456},
-  year         = {2026}
+@misc{b2026phasefidelityawaretruncatedquantumfourier,
+      title={Phase-Fidelity-Aware Truncated Quantum Fourier Transform for Scalable Phase Estimation on NISQ Hardware}, 
+      author={Akoramurthy B and Surendiran. B},
+      year={2026},
+      eprint={2604.05456},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2604.05456}, 
 }
 ```
 
@@ -260,6 +262,7 @@ Also cite the companion manuscript:
 | Akoramurthy B. | NIT Puducherry, India | akoramurthy@nitpy.ac.in |
 | Surendiran B. | NIT Puducherry, India | surendiran@nitpy.ac.in |
 | Xiaochun Cheng | Swansea University, UK | x.cheng@swansea.ac.uk |
+|Sachi Nandan Mohanty| VIT Vellore,India| sachinandan.m@vitap.ac.in|
 
 ---
 
