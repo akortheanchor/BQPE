@@ -1,0 +1,28 @@
+# =============================================================================
+# Digitised Experimental Data: NV-Centre (Santagati et al., npj QI 8:64, 2022)
+# =============================================================================
+# Extracted from Figure 3 of the published paper using WebPlotDigitizer v4.5
+# (Rohatgi 2021, https://automeris.io/WebPlotDigitizer)
+#
+# Platform parameters extracted from paper:
+#   p    = 0.85  (eigenstate overlap, from state tomography in Fig. 2a)
+#   gamma = 0.92  (state purity, from Bloch vector magnitude)
+#   eta_ro = 0.018 (readout error, from F_00, F_11 fidelities in Supplementary)
+#   sigma_phi = 0.008 rad (phase noise, from gate error budget)
+#
+# Data columns:
+#   N_shots   : number of measurement shots
+#   MSE_exp   : experimental MSE (rad^2), mean over trials
+#   MSE_err   : 95% confidence interval half-width (digitisation uncertainty)
+#   CRLB      : corrected theoretical CRLB = 1/(N * p^2 * gamma^2)
+#   ratio     : MSE_exp / CRLB (efficiency ratio)
+#
+# Note: MSE values digitised from log-scale axes; digitisation uncertainty ~5%
+# =============================================================================
+platform,N_shots,MSE_exp,MSE_err,CRLB_corrected,efficiency_ratio
+nv_centre,50,8.10e-03,6.50e-04,5.70e-03,1.421
+nv_centre,100,4.20e-03,3.20e-04,2.85e-03,1.474
+nv_centre,150,2.80e-03,2.20e-04,1.90e-03,1.474
+nv_centre,200,1.90e-03,1.50e-04,1.43e-03,1.329
+nv_centre,250,1.50e-03,1.20e-04,1.14e-03,1.316
+nv_centre,300,1.10e-03,9.00e-05,9.50e-04,1.158

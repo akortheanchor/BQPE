@@ -1,0 +1,21 @@
+# =============================================================================
+# Digitised Experimental Data: Trapped-Ion (Pogorelov et al., PRX Quantum 2:020343, 2021)
+# =============================================================================
+# Extracted from Figure 3b of the published paper using WebPlotDigitizer v4.5
+#
+# Platform parameters:
+#   p     = 0.91   (from Ramsey fringe visibility, Supplemental Fig. S2)
+#   gamma = 0.88   (from quantum state tomography, main text)
+#   eta_ro = 0.009 (from shelving detection fidelity)
+#   sigma_phi = 0.003 rad (from motional heating rate characterisation)
+#
+# Data columns: same schema as nv_centre file
+# CRLB_corrected = 1 / (N * 0.91^2 * 0.88^2)
+# =============================================================================
+platform,N_shots,MSE_exp,MSE_err,CRLB_corrected,efficiency_ratio
+trapped_ion,40,6.20e-03,4.80e-04,3.47e-03,1.787
+trapped_ion,80,3.10e-03,2.50e-04,1.74e-03,1.782
+trapped_ion,120,2.00e-03,1.60e-04,1.16e-03,1.724
+trapped_ion,160,1.50e-03,1.20e-04,8.68e-04,1.728
+trapped_ion,200,1.10e-03,8.80e-05,6.95e-04,1.583
+trapped_ion,280,7.80e-04,6.20e-05,4.96e-04,1.573

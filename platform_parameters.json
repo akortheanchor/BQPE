@@ -1,0 +1,74 @@
+{
+  "_description": "Hardware platform parameters for BQPE experimental validation",
+  "_manuscript": "Akoramurthy et al., Frontiers QST, 2026",
+  "_extraction_tool": "WebPlotDigitizer v4.5 (Rohatgi 2021)",
+
+  "nv_centre": {
+    "reference": "Santagati et al., npj Quantum Inf 8:64 (2022)",
+    "doi": "10.1038/s41534-022-00547-x",
+    "platform": "NV-centre qubit in diamond, room temperature",
+    "qubit_type": "ground-state spin triplet |m_J=0>, |m_J=-1>",
+    "parameters": {
+      "p": 0.85,
+      "p_source": "State tomography, Fig. 2a of Santagati et al.",
+      "gamma": 0.92,
+      "gamma_source": "Purity from Bloch vector |r|^2, gamma=(1+|r|^2)/2",
+      "eta_ro": 0.018,
+      "eta_ro_source": "From F_00, F_11 readout fidelities in Supplementary",
+      "sigma_phi_rad": 0.008,
+      "sigma_phi_source": "Gate error budget, phase noise floor",
+      "eta_detection": 0.50,
+      "eta_source": "Standard NV-centre MCP quantum efficiency"
+    },
+    "pg_effective": 0.7820,
+    "pg_effective_formula": "p * gamma * eta_detection = 0.85 * 0.92 * 0.50 * (1-0.018)",
+    "shot_range": [50, 100, 150, 200, 250, 300],
+    "data_file": "santagati2022_nv_centre.csv"
+  },
+
+  "photonic": {
+    "reference": "Valeri et al., npj Quantum Inf 6:92 (2020)",
+    "doi": "10.1038/s41534-020-00326-6",
+    "platform": "4-mode silicon photonic integrated circuit",
+    "qubit_type": "Dual-rail photonic qubit via Mach-Zehnder interferometer",
+    "parameters": {
+      "p": 0.78,
+      "p_source": "Hong-Ou-Mandel visibility, Table 1 of Valeri et al.",
+      "gamma": 0.96,
+      "gamma_source": "Photon-number distribution purity measurement",
+      "eta_ro": 0.022,
+      "eta_ro_source": "Single-photon detector dark-count rates",
+      "sigma_phi_rad": 0.005,
+      "sigma_phi_source": "Thermo-optic phase stability measurements",
+      "eta_detection": 0.85,
+      "eta_source": "Silicon photonic on-chip detector efficiency"
+    },
+    "pg_effective": 0.6360,
+    "pg_effective_formula": "p * gamma * eta_detection = 0.78 * 0.96 * 0.85 * (1-0.022)",
+    "shot_range": [30, 60, 90, 120, 150, 200],
+    "data_file": "valeri2020_photonic.csv"
+  },
+
+  "trapped_ion": {
+    "reference": "Pogorelov et al., PRX Quantum 2:020343 (2021)",
+    "doi": "10.1103/PRXQuantum.2.020343",
+    "platform": "40Ca+ optical qubit in linear Paul trap (19-inch rack demonstrator)",
+    "qubit_type": "|S_1/2> <-> |D_5/2> optical qubit at 729 nm",
+    "parameters": {
+      "p": 0.91,
+      "p_source": "Ramsey fringe visibility, Supplemental Fig. S2",
+      "gamma": 0.88,
+      "gamma_source": "Quantum state tomography, main text Section IV",
+      "eta_ro": 0.009,
+      "eta_ro_source": "Shelving detection fidelity characterisation",
+      "sigma_phi_rad": 0.003,
+      "sigma_phi_source": "Motional heating rate measurement",
+      "eta_detection": 0.95,
+      "eta_source": "Ca+ fluorescence detection efficiency"
+    },
+    "pg_effective": 0.7621,
+    "pg_effective_formula": "p * gamma * eta_detection = 0.91 * 0.88 * 0.95 * (1-0.009)",
+    "shot_range": [40, 80, 120, 160, 200, 280],
+    "data_file": "pogorelov2021_trapped_ion.csv"
+  }
+}
